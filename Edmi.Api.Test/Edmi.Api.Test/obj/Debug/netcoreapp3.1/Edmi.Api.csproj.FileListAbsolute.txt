@@ -1,0 +1,82 @@
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.exe
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.deps.json
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.runtimeconfig.json
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.runtimeconfig.dev.json
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.pdb
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.AssemblyInfoInputs.cache
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.AssemblyInfo.cs
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\staticwebassets\Edmi.Api.StaticWebAssets.Manifest.cache
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\staticwebassets\Edmi.Api.StaticWebAssets.xml
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\scopedcss\bundle\Edmi.Api.styles.css
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.RazorTargetAssemblyInfo.cache
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.CopyComplete
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.pdb
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.genruntimeconfig.cache
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\jesus\Desktop\EDMI.TEST\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.AssemblyReference.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.exe
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.deps.json
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.runtimeconfig.json
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.runtimeconfig.dev.json
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Edmi.Api.pdb
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.AssemblyReference.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.AssemblyInfoInputs.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.AssemblyInfo.cs
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\staticwebassets\Edmi.Api.StaticWebAssets.Manifest.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\staticwebassets\Edmi.Api.StaticWebAssets.xml
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\scopedcss\bundle\Edmi.Api.styles.css
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.RazorTargetAssemblyInfo.cache
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.CopyComplete
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.dll
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.pdb
+C:\Users\jesus\Desktop\EDMI BUENO\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.genruntimeconfig.cache
