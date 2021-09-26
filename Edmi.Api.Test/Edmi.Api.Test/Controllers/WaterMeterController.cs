@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Edmi.Api.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace edmi.Controllers
 {
@@ -38,7 +39,7 @@ namespace edmi.Controllers
         [HttpPost]
         public JsonResult Post([FromBody]WaterMeter wm)
         {
-            string res = "";
+            WaterMeter res = null;
             try
             {
                 res = _waterMeterService.insertWaterMeter(wm);

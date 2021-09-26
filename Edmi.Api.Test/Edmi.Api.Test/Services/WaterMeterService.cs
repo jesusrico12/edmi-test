@@ -21,9 +21,10 @@ namespace Edmi.Api.Services
             return _waterMeterRepository.deleteWaterMeter(id);
         }
 
-        public string insertWaterMeter(WaterMeter wm)
+        public WaterMeter insertWaterMeter(WaterMeter wm)
         {
-            return _waterMeterRepository.insertWaterMeter(wm);
+            var res =  _waterMeterRepository.insertWaterMeter(wm).Result;
+            return res;
         }
 
         public List<WaterMeter> listWaterMeters()

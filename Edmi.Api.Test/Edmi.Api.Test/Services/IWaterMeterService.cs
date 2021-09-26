@@ -10,7 +10,7 @@ namespace Edmi.Api.Services
     {
 
         List<WaterMeter> listWaterMeters();
-        string insertWaterMeter(WaterMeter wm);
+        WaterMeter insertWaterMeter(WaterMeter wm);
         string deleteWaterMeter(string id);
 
     }

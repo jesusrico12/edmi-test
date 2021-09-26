@@ -15,7 +15,7 @@ namespace edmi.Models
         public string Id { get; set; }
 
         [Required(ErrorMessage = "Serial number is required.")]
-
+        [Key]
         public string serialNumber { get; set; }
         public string firmwareVersion { get; set; }
         public string state { get; set; }

@@ -1,0 +1,32 @@
+<div style="    width: 30vw">
+<h4>Water meters</h4>
+<table class="tablewm">
+    <thead>
+      <tr>
+        <th>Serial number</th>
+        <th>Firmware version</th>
+        <th>State</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let wm of waterMeters">
+        <td>{{wm.serialNumber}}</td>
+        <td>{{wm.firmwareVersion}}</td>
+        <td>{{wm.state}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteWaterMeter(wm)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <form [formGroup]="insertform" (submit)="insertWaterMeter()" >
+    <label for="serialNumber">Serial number</label>
+    <input type="text" formControlName="serialNumber" placeholder="serialNumber" class="form-control" />
+    <label for="firmwareVersion">Firmware version</label>
+    <input type="text" formControlName="firmwareVersion"  placeholder="firmwareVersion" class="form-control"  />
+    <label for="state">State</label>
+    <input type="text" formControlName="state" placeholder="state" class="form-control"  />
+    <div class="form-group">
+        <input class="btn btn-primary btn-block" type="submit" value="Insert" [disabled]="insertform.invalid"/>
+   </div>
+</form>
+</div>  

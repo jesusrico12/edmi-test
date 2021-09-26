@@ -32,7 +32,8 @@ namespace Edmi.Api.Repositories
             return res;
         }
 
-        public string insertWaterMeter(WaterMeter wm)
+        //public string insertWaterMeter(WaterMeter wm)
+        public async Task<WaterMeter> insertWaterMeter(WaterMeter wm)
         {
             string res = "";
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
@@ -40,13 +41,13 @@ namespace Edmi.Api.Repositories
             Boolean existDevices = dbClient.GetDatabase("EdmiDB").GetCollection<WaterMeter>("WaterMeter").Find(x => x.serialNumber == wm.serialNumber).Any();
 
 
-            if (existDevices) return "There is another device with the same serial number.";
+            //if (existDevices) return "There is another device with the same serial number.";
 
-            dbClient.GetDatabase("EdmiDB").GetCollection<WaterMeter>("WaterMeter").InsertOne(wm);
+            await dbClient.GetDatabase("EdmiDB").GetCollection<WaterMeter>("WaterMeter").InsertOneAsync(wm);
 
             res = "Insertion succesfully";
 
-            return res;
+            return wm;
 
         }
 

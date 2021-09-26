@@ -9,7 +9,7 @@ namespace Edmi.Api.Repositories
     public interface IWaterMeterRepository
     {
         List<WaterMeter> listWaterMeters();
-        string insertWaterMeter(WaterMeter wm);
+        Task<WaterMeter> insertWaterMeter(WaterMeter wm);
         string deleteWaterMeter(string id);
     }
 }

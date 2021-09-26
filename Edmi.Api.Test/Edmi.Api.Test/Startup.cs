@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,9 +28,11 @@ namespace edmi
         public void ConfigureServices(IServiceCollection services)
         {
             //Enable CORS 
-            services.AddCors(c => {
-                c.AddPolicy("AllowOrigin",options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            });
+            services.AddCors(//c => {
+                //c.AddPolicy("AllowOrigin",options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+                //c.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());            
+        //    }
+        );
 
             //Injection
             services.AddScoped<IWaterMeterService, WaterMeterService>();
@@ -65,7 +66,11 @@ namespace edmi
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseCors();
+            app.UseCors(options =>
+            options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            //app.UseMvc();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
