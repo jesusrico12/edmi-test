@@ -60,16 +60,14 @@ namespace edmi
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseHttpsRedirection();
+
 
             app.UseRouting();
 
-            //app.UseCors();
             app.UseCors(options =>
             options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMiddleware<ExceptionMiddlewareCustomize>();
-            //app.UseMvc();
-            //app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {
