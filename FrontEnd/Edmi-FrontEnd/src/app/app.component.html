@@ -10,9 +10,17 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
 <router-outlet>
+  <div class="col-md-4 col-sm-4">
   <app-water-meter></app-water-meter>
+  </div>
+  <div class="col-md-4 col-sm-4">
+  <app-electric-meter></app-electric-meter>
+  </div>
+  <div class="col-md-4 col-sm-4">
+  <app-gateway-meter></app-gateway-meter>
+  </div>
 </router-outlet>
 </div>
 </body>

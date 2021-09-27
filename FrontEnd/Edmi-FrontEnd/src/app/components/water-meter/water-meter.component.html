@@ -1,6 +1,6 @@
-<div style="    width: 30vw">
+
 <h4>Water meters</h4>
-<table class="tablewm">
+  <table class="tablewm">
     <thead>
       <tr>
         <th>Serial number</th>
@@ -14,7 +14,7 @@
         <td>{{wm.serialNumber}}</td>
         <td>{{wm.firmwareVersion}}</td>
         <td>{{wm.state}}</td>
-        <td><button type="button" class="btn btn-danger" (click)="deleteWaterMeter(wm)">Remove</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteWaterMeter(wm)"><span class="glyphicon glyphicon-trash"></span></button></td>
       </tr>
     </tbody>
   </table>
@@ -25,8 +25,9 @@
     <input type="text" formControlName="firmwareVersion"  placeholder="firmwareVersion" class="form-control"  />
     <label for="state">State</label>
     <input type="text" formControlName="state" placeholder="state" class="form-control"  />
+    <br>
     <div class="form-group">
         <input class="btn btn-primary btn-block" type="submit" value="Insert" [disabled]="insertform.invalid"/>
    </div>
-</form>
-</div>  
+  </form>
+

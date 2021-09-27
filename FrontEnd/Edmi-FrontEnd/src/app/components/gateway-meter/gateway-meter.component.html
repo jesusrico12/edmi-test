@@ -1,1 +1,42 @@
-<p>gateway-meter works!</p>
+
+    <h4>Gateway</h4>
+      <table class="tableg">
+        <thead>
+          <tr>
+            <th>Serial number</th>
+            <th>Firmware version</th>
+            <th>State</th>
+            <th>IP</th>
+            <th>Port</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let g of gateways">
+            <td>{{g.serialNumber}}</td>
+            <td>{{g.firmwareVersion}}</td>
+            <td>{{g.state}}</td>
+            <td>{{g.Ip}}</td>
+            <td>{{g.port}}</td>
+            <td><button type="button" class="btn btn-danger" (click)="deleteGateway(g)"><span class="glyphicon glyphicon-trash"></span></button></td>
+          </tr>
+        </tbody>
+      </table>
+      <form [formGroup]="insertform" (submit)="insertGateway()" >
+        <label for="serialNumber">Serial number</label>
+        <input type="text" formControlName="serialNumber" placeholder="serialNumber" class="form-control" />
+        <label for="firmwareVersion">Firmware version</label>
+        <input type="text" formControlName="firmwareVersion"  placeholder="firmwareVersion" class="form-control"  />
+        <label for="state">State</label>
+        <input type="text" formControlName="state" placeholder="state" class="form-control"  />
+        <label for="state">IP</label>
+        <input type="text" formControlName="ip" placeholder="IP" class="form-control"  />
+        <label for="state">Port</label>
+        <input type="number" formControlName="port" placeholder="Port" class="form-control"  />
+        <br>
+        <div class="form-group">
+            <input class="btn btn-primary btn-block" type="submit" value="Insert" [disabled]="insertform.invalid"/>
+       </div>
+      </form>
+
+    

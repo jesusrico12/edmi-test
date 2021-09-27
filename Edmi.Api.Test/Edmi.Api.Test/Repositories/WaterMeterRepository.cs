@@ -32,7 +32,6 @@ namespace Edmi.Api.Repositories
             return res;
         }
 
-        //public string insertWaterMeter(WaterMeter wm)
         public async Task<WaterMeter> insertWaterMeter(WaterMeter wm)
         {
             string res = "";

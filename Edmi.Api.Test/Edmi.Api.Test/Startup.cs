@@ -37,10 +37,10 @@ namespace edmi
             //Injection
             services.AddScoped<IWaterMeterService, WaterMeterService>();
             services.AddScoped<IWaterMeterRepository, WaterMeterRepository>();
-            //services.AddScoped<IElectricMeterService, ElectricMeterService>();
-            //services.AddScoped<IElectricMeterRepository, ElectricMeterRepository>();
-            //services.AddScoped<IGatewayService, GatewayService>();
-            //services.AddScoped<IGatewayRepository, GatewayRepository>();
+            services.AddScoped<IElectricMeterService, ElectricMeterService>();
+            services.AddScoped<IElectricMeterRepository, ElectricMeterRepository>();
+            services.AddScoped<IGatewayService, GatewayService>();
+            services.AddScoped<IGatewayRepository, GatewayRepository>();
 
 
             //JSON Serializer

@@ -5,7 +5,7 @@ export class Gateway{
 		public serialNumber      :string,
 		public firmwareVersion      :String,
 		public state    :string,
-        public ip      :String,
+        public Ip      :String,
 		public port    :string
 		) {
 	

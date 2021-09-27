@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Edmi.Api.Services;
 
 namespace edmi.Controllers
 {
@@ -14,51 +15,57 @@ namespace edmi.Controllers
     [ApiController]
     public class GatewayController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
+        private readonly IGatewayService _gatewayService;
 
-
-        public GatewayController(IConfiguration configuration) {
-            _configuration = configuration;
+        public GatewayController(IGatewayService gatewayService)
+        {
+            _gatewayService = gatewayService;
         }
 
         [HttpGet]
         public JsonResult Get()
         {
-            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+            List<Gateway> wms = null;
+            try
+            {
+                wms = _gatewayService.listGateways();
+            }
+            catch (Exception e)
+            {
 
-            var dbList = dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").AsQueryable().ToList();
-
-
-            
-            return new JsonResult(dbList);
+            }
+            return new JsonResult(wms);
         }
 
         [HttpPost]
-        public JsonResult Post([FromBody]Gateway wm)
+        public JsonResult Post([FromBody] Gateway wm)
         {
-            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+            Gateway res = null;
+            try
+            {
+                res = _gatewayService.insertGateway(wm);
+            }
+            catch (Exception e)
+            {
 
-            Boolean existDevices = dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").Find(x=>x.serialNumber == wm.serialNumber).Any();
-
-            
-            if(existDevices) return new JsonResult("There is another device with the same serial number.");
-            
-            dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").InsertOne(wm);
-
-            return new JsonResult("Insertion succesfully");
+            }
+            return new JsonResult(res);
         }
 
         [HttpDelete("{Id}")]
         public JsonResult Delete(string Id)
         {
-            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+            string res = "";
+            try
+            {
+                res = _gatewayService.deleteGateway(Id);
+            }
+            catch (Exception e)
+            {
 
-            var wmDB = Builders<Gateway>.Filter.Eq("Id",Id);
-            //Añadir excepcion si no existe el Id
+            }
+            return new JsonResult(res);
 
-            dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").DeleteOne(wmDB);
-
-            return new JsonResult("Deleted succesfully");
         }
     }
 }

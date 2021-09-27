@@ -16,7 +16,6 @@ export class WaterMeterComponent implements OnInit {
   public waterMeters:WaterMeter [] ;
   public status:string;
   public url:string;
-  public waterMeter:WaterMeter;
   public insertform : FormGroup;
 
   constructor(
@@ -28,7 +27,6 @@ export class WaterMeterComponent implements OnInit {
     this.url=GLOBAL.url;
     this.waterMeters = [];
     this.status = "";
-    this.waterMeter = new WaterMeter('','','','');
     this.insertform =  this.formBuilder.group({
       serialNumber:['',[Validators.required]],
       firmwareVersion:[''],

@@ -23,6 +23,7 @@ namespace Edmi.Api.Services
 
         public WaterMeter insertWaterMeter(WaterMeter wm)
         {
+            //Retrieving object from DB
             var res =  _waterMeterRepository.insertWaterMeter(wm).Result;
             return res;
         }

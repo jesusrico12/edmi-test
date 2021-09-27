@@ -1,11 +1,63 @@
-﻿using System;
+﻿using edmi.Models;
+using Microsoft.Extensions.Configuration;
+using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Edmi.Api.Repositories
 {
-    public class GatewayRepository
+    public class GatewayRepository : IGatewayRepository
     {
+        private readonly IConfiguration _configuration;
+
+        public GatewayRepository(IConfiguration configuration)
+        {
+            _configuration = configuration;
+
+        }
+
+        public string deleteGateway(string id)
+        {
+            string res = "";
+            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+
+            var wmDB = Builders<Gateway>.Filter.Eq("Id", id);
+
+            dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").DeleteOne(wmDB);
+
+            res = "Deleted succesfully";
+
+            return res;
+        }
+
+        public async Task<Gateway> insertGateway(Gateway wm)
+        {
+            string res = "";
+            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+
+            Boolean existDevices = dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").Find(x => x.serialNumber == wm.serialNumber).Any();
+
+
+            //if (existDevices) return "There is another device with the same serial number.";
+
+            await dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").InsertOneAsync(wm);
+
+            res = "Insertion succesfully";
+
+            return wm;
+
+        }
+
+        public List<Gateway> listGateways()
+        {
+
+            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+
+            var dbList = dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").AsQueryable().ToList();
+
+            return dbList;
+        }
     }
 }

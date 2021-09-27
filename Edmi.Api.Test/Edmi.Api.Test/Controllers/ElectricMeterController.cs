@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Edmi.Api.Services;
 
 namespace edmi.Controllers
 {
@@ -14,50 +15,57 @@ namespace edmi.Controllers
     [ApiController]
     public class ElectricMeterController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
+        private readonly IElectricMeterService _electricMeterService;
 
-        public ElectricMeterController(IConfiguration configuration) {
-            _configuration = configuration;
+        public ElectricMeterController(IElectricMeterService electricMeterService)
+        {
+            _electricMeterService = electricMeterService;
         }
 
         [HttpGet]
         public JsonResult Get()
         {
-            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+            List<ElectricMeter> wms = null;
+            try
+            {
+                wms = _electricMeterService.listElectricMeters();
+            }
+            catch (Exception e)
+            {
 
-            var dbList = dbClient.GetDatabase("EdmiDB").GetCollection<ElectricMeter>("ElectricMeter").AsQueryable().ToList();
-
-
-            
-            return new JsonResult(dbList);
+            }
+            return new JsonResult(wms);
         }
 
         [HttpPost]
-        public JsonResult Post([FromBody]ElectricMeter wm)
+        public JsonResult Post([FromBody] ElectricMeter wm)
         {
-            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+            ElectricMeter res = null;
+            try
+            {
+                res = _electricMeterService.insertElectricMeter(wm);
+            }
+            catch (Exception e)
+            {
 
-            Boolean existDevices = dbClient.GetDatabase("EdmiDB").GetCollection<ElectricMeter>("ElectricMeter").Find(x=>x.serialNumber == wm.serialNumber).Any();
-
-            
-            if(existDevices) return new JsonResult("There is another device with the same serial number.");
-            
-            dbClient.GetDatabase("EdmiDB").GetCollection<ElectricMeter>("ElectricMeter").InsertOne(wm);
-
-            return new JsonResult("Insertion succesfully");
+            }
+            return new JsonResult(res);
         }
 
         [HttpDelete("{Id}")]
         public JsonResult Delete(string Id)
         {
-            MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
+            string res = "";
+            try
+            {
+                res = _electricMeterService.deleteElectricMeter(Id);
+            }
+            catch (Exception e)
+            {
 
-            var wmDB = Builders<ElectricMeter>.Filter.Eq("Id",Id);
-            //Añadir excepcion si no existe el Id
+            }
+            return new JsonResult(res);
 
-            dbClient.GetDatabase("EdmiDB").GetCollection<ElectricMeter>("ElectricMeter").DeleteOne(wmDB);
-
-            return new JsonResult("Deleted succesfully");
         }
     }
 }

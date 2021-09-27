@@ -1,1 +1,34 @@
-<p>electric-meter works!</p>
+
+    <h4>Electric meters</h4>
+      <table class="tableem">
+        <thead>
+          <tr>
+            <th>Serial number</th>
+            <th>Firmware version</th>
+            <th>State</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let em of electricMeters">
+            <td>{{em.serialNumber}}</td>
+            <td>{{em.firmwareVersion}}</td>
+            <td>{{em.state}}</td>
+            <td><button type="button" class="btn btn-danger" (click)="deleteElectricMeter(em)"><span class="glyphicon glyphicon-trash"></span></button></td>
+          </tr>
+        </tbody>
+      </table>
+      <form [formGroup]="insertform" (submit)="insertElectricMeter()" >
+        <label for="serialNumber">Serial number</label>
+        <input type="text" formControlName="serialNumber" placeholder="serialNumber" class="form-control" />
+        <label for="firmwareVersion">Firmware version</label>
+        <input type="text" formControlName="firmwareVersion"  placeholder="firmwareVersion" class="form-control"  />
+        <label for="state">State</label>
+        <input type="text" formControlName="state" placeholder="state" class="form-control"  />
+        <br>
+        <div class="form-group">
+            <input class="btn btn-primary btn-block" type="submit" value="Insert" [disabled]="insertform.invalid"/>
+       </div>
+      </form>
+
+    

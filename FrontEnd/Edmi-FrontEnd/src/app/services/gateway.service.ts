@@ -6,7 +6,7 @@ import {GLOBAL} from './global';
 
 @Injectable(
     )
-    export class GatewayrService{
+    export class GatewayService{
         public url:string;
 
         constructor(
@@ -20,7 +20,7 @@ import {GLOBAL} from './global';
             let params = JSON.stringify(gw);
             let headers =  new HttpHeaders().set('Content-Type', 'application/json');
 
-        return this._http.post(this.url+'Gateway',params,{headers:headers});
+        return this._http.post(this.url+'Gateway/',params,{headers:headers});
 
         }
         getGateways():Observable<any>{
