@@ -3,7 +3,7 @@
 
     The application has been developed with .NET CORE 3.1, Angular 12 and MongoDB. The Backend has been separated from the FrontEnd and a no-sql database has been used in the Cloud.
     
-    ![Alt text](/Images/App.png?raw=true "App")
+   ![Alt text](/Images/App.png?raw=true "App")
 
     Deployed link: 
     https://edmi-app.herokuapp.com/
@@ -14,7 +14,7 @@
 
     MongoDB Atlas has been used in the cloud. In order to create a database in the cloud it is necessary to register on the web, create a database and configure it.
     
-    ![Alt text](/Images/MongoDB.png?raw=true "MongoDB")
+   ![Alt text](/Images/MongoDB.png?raw=true "MongoDB")
 
     Backend:
 
@@ -23,7 +23,7 @@
     Deployment link: 
     https://edmiapi.azurewebsites.net/
 
-    ![Alt text](/Images/Azure.png?raw=true "Azure")
+   ![Alt text](/Images/Azure.png?raw=true "Azure")
 
     FrontEnd: 
 
