@@ -23,7 +23,7 @@ namespace edmi.Controllers
         }
 
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult GetAll()
         {
             List<ElectricMeter> wms = null;
             try
@@ -32,13 +32,13 @@ namespace edmi.Controllers
             }
             catch (Exception e)
             {
-
+                throw new ApplicationException(e.Message);
             }
             return new JsonResult(wms);
         }
 
         [HttpPost]
-        public JsonResult Post([FromBody] ElectricMeter wm)
+        public IActionResult Post([FromBody] ElectricMeter wm)
         {
             ElectricMeter res = null;
             try
@@ -47,13 +47,13 @@ namespace edmi.Controllers
             }
             catch (Exception e)
             {
-
+                throw new ApplicationException(e.Message);
             }
             return new JsonResult(res);
         }
 
         [HttpDelete("{Id}")]
-        public JsonResult Delete(string Id)
+        public IActionResult Delete(string Id)
         {
             string res = "";
             try
@@ -62,7 +62,7 @@ namespace edmi.Controllers
             }
             catch (Exception e)
             {
-
+                throw new ApplicationException(e.Message);
             }
             return new JsonResult(res);
 

@@ -43,11 +43,12 @@ export class ElectricMeterComponent implements OnInit {
       response=>{
        if(response){
             this.electricMeters=response;
+            this.status='';
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );
@@ -60,11 +61,12 @@ export class ElectricMeterComponent implements OnInit {
        if(response){
             this.electricMeters.push(response);
             this.insertform.reset();
+            this.status='';
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );
@@ -77,12 +79,13 @@ export class ElectricMeterComponent implements OnInit {
         var search = this.electricMeters.indexOf(wm);
         if(search != -1){
             this.electricMeters.splice(search,1);
+            this.status='';
           }
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );

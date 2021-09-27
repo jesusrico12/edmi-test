@@ -42,11 +42,12 @@ export class WaterMeterComponent implements OnInit {
       response=>{
        if(response){
             this.waterMeters=response;
+            this.status='';
         }
       },
       error=>{
         if(error){
-            this.status='error';
+            this.status=error.error;
         }
       }
     );
@@ -59,11 +60,12 @@ export class WaterMeterComponent implements OnInit {
        if(response){
             this.waterMeters.push(response);
             this.insertform.reset();
+            this.status='';
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );
@@ -76,12 +78,13 @@ export class WaterMeterComponent implements OnInit {
         var search = this.waterMeters.indexOf(wm);
         if(search != -1){
             this.waterMeters.splice(search,1);
+            this.status='';
           }
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );

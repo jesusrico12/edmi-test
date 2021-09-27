@@ -48,7 +48,7 @@ export class GatewayMeterComponent implements OnInit {
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );
@@ -61,11 +61,12 @@ export class GatewayMeterComponent implements OnInit {
        if(response){
             this.gateways.push(response);
             this.insertform.reset();
+            this.status='';
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );
@@ -78,12 +79,13 @@ export class GatewayMeterComponent implements OnInit {
         var search = this.gateways.indexOf(wm);
         if(search != -1){
             this.gateways.splice(search,1);
+            this.status='';
           }
         }
       },
       error=>{
         if(error){
-            this.status='error';
+          this.status=error.error;
         }
       }
     );

@@ -37,6 +37,11 @@
         <div class="form-group">
             <input class="btn btn-primary btn-block" type="submit" value="Insert" [disabled]="insertform.invalid"/>
        </div>
+       <div class="form-group" *ngIf="status">
+        <div class="alert alert-danger">
+          {{status}}
+        </div>
+      </div>
       </form>
 
     

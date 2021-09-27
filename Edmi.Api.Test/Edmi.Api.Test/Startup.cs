@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Serialization;
 using Edmi.Api.Repositories;
 using Edmi.Api.Services;
+using Edmi.Api.Utilities;
 
 namespace edmi
 {
@@ -28,11 +29,7 @@ namespace edmi
         public void ConfigureServices(IServiceCollection services)
         {
             //Enable CORS 
-            services.AddCors(//c => {
-                //c.AddPolicy("AllowOrigin",options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-                //c.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());            
-        //    }
-        );
+            services.AddCors();
 
             //Injection
             services.AddScoped<IWaterMeterService, WaterMeterService>();
@@ -41,6 +38,7 @@ namespace edmi
             services.AddScoped<IElectricMeterRepository, ElectricMeterRepository>();
             services.AddScoped<IGatewayService, GatewayService>();
             services.AddScoped<IGatewayRepository, GatewayRepository>();
+            services.AddScoped<IChecker, Checker>();
 
 
             //JSON Serializer
@@ -69,6 +67,7 @@ namespace edmi
             //app.UseCors();
             app.UseCors(options =>
             options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseMiddleware<ExceptionMiddlewareCustomize>();
             //app.UseMvc();
             //app.UseAuthorization();
 

@@ -107,7 +107,6 @@ C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\
 C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
 C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
-C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.csproj.AssemblyReference.cache
 C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.AssemblyInfoInputs.cache
 C:\Users\jesus\Desktop\EDMI\Edmi.Api.Test\Edmi.Api.Test\obj\Debug\netcoreapp3.1\Edmi.Api.AssemblyInfo.cs

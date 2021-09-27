@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Edmi.Api.Services;
 using Microsoft.AspNetCore.Authorization;
+using System.Net;
 
 namespace edmi.Controllers
 {
@@ -23,21 +24,22 @@ namespace edmi.Controllers
         }
 
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult GetAll()
         {
             List<WaterMeter> wms = null;
             try
             {
-                 wms =_waterMeterService.listWaterMeters();
+                wms =_waterMeterService.listWaterMeters();
             }
-            catch (Exception e) { 
-            
+            catch (Exception e)
+            {
+                throw new ApplicationException(e.Message);
             }
             return new JsonResult(wms);
         }
 
         [HttpPost]
-        public JsonResult Post([FromBody]WaterMeter wm)
+        public IActionResult Post([FromBody]WaterMeter wm)
         {
             WaterMeter res = null;
             try
@@ -46,13 +48,13 @@ namespace edmi.Controllers
             }
             catch (Exception e)
             {
-
+                throw new ApplicationException(e.Message);
             }
             return new JsonResult(res);
         }
 
         [HttpDelete("{Id}")]
-        public JsonResult Delete(string Id)
+        public IActionResult Delete(string Id)
         {
             string res = "";
             try
@@ -61,7 +63,7 @@ namespace edmi.Controllers
             }
             catch (Exception e)
             {
-
+                throw new ApplicationException(e.Message);
             }
             return new JsonResult(res);
 

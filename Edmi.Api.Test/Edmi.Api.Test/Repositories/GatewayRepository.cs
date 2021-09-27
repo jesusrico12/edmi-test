@@ -1,4 +1,5 @@
 ﻿using edmi.Models;
+using Edmi.Api.Utilities;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
@@ -11,11 +12,11 @@ namespace Edmi.Api.Repositories
     public class GatewayRepository : IGatewayRepository
     {
         private readonly IConfiguration _configuration;
-
-        public GatewayRepository(IConfiguration configuration)
+        private readonly IChecker _checker;
+        public GatewayRepository(IConfiguration configuration, IChecker checker)
         {
             _configuration = configuration;
-
+            _checker = checker;
         }
 
         public string deleteGateway(string id)
@@ -34,17 +35,11 @@ namespace Edmi.Api.Repositories
 
         public async Task<Gateway> insertGateway(Gateway wm)
         {
-            string res = "";
             MongoClient dbClient = new MongoClient(_configuration.GetConnectionString("EdmiDB"));
 
-            Boolean existDevices = dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").Find(x => x.serialNumber == wm.serialNumber).Any();
-
-
-            //if (existDevices) return "There is another device with the same serial number.";
+            if (!_checker.IsUniqueDevice(dbClient, wm)) throw new System.ArgumentException("There is another device with the same serial number.", "Serial Number");
 
             await dbClient.GetDatabase("EdmiDB").GetCollection<Gateway>("Gateway").InsertOneAsync(wm);
-
-            res = "Insertion succesfully";
 
             return wm;
 
